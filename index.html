@@ -1,68 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <title>Frontend Mentor | Four card feature section</title>
-  <link rel="stylesheet" href="style.css">
+  <meta property="og:title" content="Four Card Feature Section" />
+  <meta property="og:description" content="A clean, responsive four-card preview layout showcasing key features with modern UI design, smooth spacing, and frontend best practices. Demo UI!" />
+  <meta property="og:image" content="https://fourcardpreviewcfrontend.netlify.app/og.png" />
+  <meta property="og:url" content="https://fourcardpreviewcfrontend.netlify.app/" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Four Card Feature Section" />
+  <meta name="twitter:description" content="A clean, responsive four-card preview layout showcasing key features with modern UI design, smooth spacing, and frontend best practices. Demo UI!" />
+  <meta name="twitter:image" content="https://fourcardpreviewcfrontend.netlify.app/og.png" />
+  
+  <link rel="icon" href="./images/icon-calculator.svg">
+  <title>Four Card Feature Section</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-
-<body>
-
-  <!-- Header -->
-  <header class="mt-10">
-    <h1 class="text-3xl font-thin text-center darkBlue">Reliable, efficient delivery</h1>
-    <h1 class="text-center text-3xl font-bold darkBlue mt-2">Powered by Technology</h1>
-    <p class="grayBlue text-center mt-5 text-xl">Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful</p>
+<body class="bg-gray-100 font-sans">
+  <header class="mt-12 sm:mt-8 px-6 mb-12">
+    <h1 class="text-2xl sm:text-4xl font-light text-center text-gray-600">Reliable, efficient delivery</h1>
+    <h1 class="text-center text-xl sm:text-4xl font-bold text-gray-800 mt-2">Powered by Technology</h1>
+    <p class="text-gray-500 text-center mt-4 max-w-xl mx-auto text-base">Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful</p>
   </header>
-
-  <!-- cards -->
-  <main class="cards flex flex-wrap justify-center items-center mt-12 gap-6 mb-6">
-    <!-- first part -->
-
-    <!-- first card -->
-
-    <div class="firstPart shadow-2xl bg-white h-60 w-90 rounded-lg">
-      <h2 class="darkBlue font-bold text-2xl m-5 mt-4">Supervisor</h2>
-      <p class="grayBlue ml-4 mr-16">Monitors activity to identify project <br> roadblocks</p>
-      <img class="mt-10 ml-56" src="images/icon-supervisor.svg">
+  <main class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8 sm:gap-0 items-center justify-items-center mb-8 sm:mb-0">
+    <div class="firstPart shadow-xl bg-white h-56 w-full max-w-[350px] rounded-lg p-6 border-t-4 border-cyan-400 relative">
+      <h2 class="text-gray-800 font-bold text-xl mb-2">Supervisor</h2>
+      <p class="text-gray-500 text-xs sm:text-sm leading-relaxed">Monitors activity to identify project roadblocks</p>
+      <img class="absolute bottom-6 right-6" src="images/icon-supervisor.svg" alt="">
     </div>
-
-    <!-- second part -->
-    <div class="secondPart gap-6 w-90 flex flex-col justify-center items-center">
-
-      <!-- second card -->
-      <div class="second shadow-2xl bg-white h-60 w-90 rounded-lg p-4">
-        <h2 class="darkBlue font-bold text-2xl m-5 mt-4">Team Builder</h2>
-        <p class="grayBlue ml-6 "> Scans our talent network to create the <br>optimal team for your project</p>
-        <img class="mt-6 ml-52" src="images/icon-team-builder.svg">
+    <div class="secondPart flex flex-col gap-8 w-full max-w-[350px]">
+      <div class="shadow-xl bg-white h-56 w-full rounded-lg p-6 border-t-4 border-red-500 relative">
+        <h2 class="text-gray-800 font-bold text-xl mb-2">Team Builder</h2>
+        <p class="text-gray-500 text-xs sm:text-sm leading-relaxed">Scans our talent network to create the optimal team for your project</p>
+        <img class="absolute bottom-6 right-6" src="images/icon-team-builder.svg" alt="">
       </div>
-
-      <!-- third card -->
-      <div class="third shadow-2xl bg-white h-60 w-90 rounded-lg p-4">
-        <h2 class="darkBlue font-bold text-2xl m-5 mt-4">Karma</h2>
-        <p class="grayBlue ml-4 mr-16">Regularly evaluates our talent <br> to ensure quality</p>
-        <img class="mt-6 ml-52" src="images/icon-karma.svg">
+      <div class="shadow-xl bg-white h-56 w-full rounded-lg p-6 border-t-4 border-orange-400 relative">
+        <h2 class="text-gray-800 font-bold text-xl mb-2">Karma</h2>
+        <p class="text-gray-500 text-xs sm:text-sm leading-relaxed">Regularly evaluates our talent to ensure quality</p>
+        <img class="absolute bottom-6 right-6" src="images/icon-karma.svg" alt="">
       </div>
     </div>
-
-    <!-- third part -->
-    <div class="thirdPart">
-
-      <!-- fourth card -->
-
-      <div class="fourth shadow-2xl bg-white h-60 w-90 rounded-lg p-2">
-        <h2 class="darkBlue font-bold text-2xl m-5 mt-4">Calculator</h2>
-        <p class="grayBlue ml-4 mr-16">Uses data from past projects to <br> provide better delivery estimates</p>
-        <img class="mt-10 ml-56" src="images/icon-calculator.svg">
-      </div>
+    <div class="thirdPart shadow-xl bg-white h-56 w-full max-w-[350px] rounded-lg p-6 border-t-4 border-blue-500 relative">
+      <h2 class="text-gray-800 font-bold text-xl mb-2">Calculator</h2>
+      <p class="text-gray-500 text-xs sm:text-sm leading-relaxed">Uses data from past projects to provide better delivery estimates</p>
+      <img class="absolute bottom-6 right-6" src="images/icon-calculator.svg" alt="">
     </div>
   </main>
-
-
 </body>
-
 </html>
